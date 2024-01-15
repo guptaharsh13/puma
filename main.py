@@ -38,9 +38,7 @@ def format_product_sizes(product_sizes):
     return formatted_product_sizes
 
 
-product_links = [
-    "https://in.puma.com/in/en/pd/royalcat-memory-foam-unisex-slides/383892?swatch=02"
-]
+product_links = open("product-links.txt").read().splitlines()
 sizes_you_want = [3, 8, 9]
 
 
