@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 from sendEmail import send_email
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 
 def find_product_sizes(product_links):
@@ -39,8 +41,7 @@ def format_product_sizes(product_sizes):
     return formatted_product_sizes
 
 
-product_links = open(os.path.join(
-    os.getcwd(), "product-links.txt")).read().splitlines()
+product_links = open(os.environ.get("PRODUCT_LINKS_FILE")).read().splitlines()
 sizes_you_want = [3, 8, 9]
 
 
