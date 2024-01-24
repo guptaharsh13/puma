@@ -2,3 +2,4 @@ venv
 .env
 product-links.txt
 logs.txt
+__pycache__
