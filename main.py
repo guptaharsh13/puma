@@ -54,6 +54,8 @@ def main():
                     # ek v product ka size mil gya toh email bhej do
                     send_email("Status of the puma products you wanna buy",
                                format_product_sizes(product_sizes))
+                    print(
+                        "[Success] Status of the puma products you wanna buy sent over email")
                     quit()
 
         send_email("Your puma products not found",
